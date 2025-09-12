@@ -3,41 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Sandvær Jørgensen - Portfolio</title>
+    <title>Thomas Sandvær Jørgensen - Senior Software Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Thomas Sandvær Jørgensen</span>
+            <div class="nav-brand">
+                <span class="brand-name">Thomas Sandvær Jørgensen</span>
+                <span class="brand-subtitle">Senior Software Developer</span>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -47,39 +35,32 @@
             <div class="hero-container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1 class="hero-title">
-                            <span class="greeting">Hi, I'm Thomas Sandvær Jørgensen</span>
-                        </h1>
-                        <h2 class="hero-subtitle">Senior Software Developer & Datamatiker</h2>
-                        <p class="hero-description">
-                            Experienced software developer with a focus on high quality and good teamworking skills. 
-                            Specialized in C# .NET with strong leadership capabilities and performance-driven development.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                            <a href="#projects" class="btn btn-secondary">View My Work</a>
+                        <div class="hero-greeting">Hello, I'm</div>
+                        <h1 class="hero-name">Thomas Sandvær<br>Jørgensen</h1>
+                        <div class="hero-role">
+                            <span class="role-text">Senior Software Developer & Datamatiker</span>
+                            <div class="role-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Copenhagen, Denmark
+                            </div>
                         </div>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/thomassandvær-jørgensen-605783180" target="_blank" class="social-link">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="mailto:linkedin@sandvaer.dk" class="social-link">
-                                <i class="fas fa-envelope"></i>
-                            </a>
+                        <p class="hero-description">
+                            Experienced software developer with 13+ years of expertise in C# .NET development, 
+                            team leadership, and building high-quality enterprise solutions.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn btn-primary">Get in touch</a>
+                            <a href="#experience" class="btn btn-secondary">View experience</a>
                         </div>
                     </div>
-                    <div class="hero-image">
-                        <div class="image-container">
-                            <div class="profile-picture">
-                                <img src="https://via.placeholder.com/300x300/1a1a1a/ffffff?text=TS" alt="Thomas Sandvær Jørgensen" id="profile-img">
+                    <div class="hero-visual">
+                        <div class="profile-container">
+                            <div class="profile-image">
+                                <img src="https://via.placeholder.com/280x280/2a2a2a/ffffff?text=TS" alt="Thomas Sandvær Jørgensen">
                             </div>
-                            <div class="floating-elements">
-                                <div class="floating-element" data-speed="2">💻</div>
-                                <div class="floating-element" data-speed="3">⚡</div>
-                                <div class="floating-element" data-speed="1.5">🚀</div>
+                            <div class="profile-status">
+                                <div class="status-indicator"></div>
+                                <span>Available for opportunities</span>
                             </div>
                         </div>
                     </div>
@@ -90,10 +71,10 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="section-line"></div>
+                    <h2 class="section-title">About</h2>
+                    <p class="section-subtitle">Get to know me better</p>
                 </div>
-                <div class="about-content">
+                <div class="about-grid">
                     <div class="about-text">
                         <p>
                             I'm an experienced software developer with a focus on high quality and excellent teamworking skills. 
@@ -104,18 +85,53 @@
                             I have a drive to make my team work fluently and efficiently, with a strong focus on high quality 
                             and performance. Currently working as Senior Software Developer at EDC-Gruppen A/S in Copenhagen.
                         </p>
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="stat-number">13+</span>
-                                <span class="stat-label">Years Experience</span>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Full-Stack Development</h4>
+                                    <p>Expert in C# .NET, React, and modern web technologies</p>
+                                </div>
                             </div>
-                            <div class="stat">
-                                <span class="stat-number">100+</span>
-                                <span class="stat-label">Projects Completed</span>
+                            <div class="highlight">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Team Leadership</h4>
+                                    <p>Experienced in leading development teams and mentoring</p>
+                                </div>
                             </div>
-                            <div class="stat">
-                                <span class="stat-number">15+</span>
-                                <span class="stat-label">Technologies Mastered</span>
+                            <div class="highlight">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Quality Focus</h4>
+                                    <p>Committed to high-quality code and best practices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">13+</div>
+                                <div class="stat-label">Years of Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Companies</div>
                             </div>
                         </div>
                     </div>
@@ -127,94 +143,108 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Experience</h2>
-                    <div class="section-line"></div>
+                    <p class="section-subtitle">My professional journey</p>
                 </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="job-title">Senior Software Developer</h3>
-                            <h4 class="company">EDC-Gruppen A/S</h4>
-                            <span class="duration">December 2021 - Present (3+ years)</span>
-                            <p class="job-description">
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="exp-timeline">
+                            <div class="exp-dot"></div>
+                            <div class="exp-line"></div>
+                        </div>
+                        <div class="exp-content">
+                            <div class="exp-header">
+                                <h3 class="exp-title">Senior Software Developer</h3>
+                                <div class="exp-company">EDC-Gruppen A/S</div>
+                                <div class="exp-period">December 2021 - Present</div>
+                            </div>
+                            <p class="exp-description">
                                 Development and maintenance of EDC's customer platform edc.dk. Working with modern web technologies 
                                 and maintaining high-quality standards in a collaborative team environment.
                             </p>
-                            <div class="job-technologies">
-                                <span class="tech-tag">Umbraco</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">C#</span>
-                                <span class="tech-tag">.NET Core</span>
-                                <span class="tech-tag">.NET 8</span>
-                                <span class="tech-tag">REST API</span>
-                                <span class="tech-tag">SQL</span>
-                                <span class="tech-tag">Azure DevOps</span>
+                            <div class="exp-tags">
+                                <span class="tag">Umbraco</span>
+                                <span class="tag">React</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">.NET Core</span>
+                                <span class="tag">.NET 8</span>
+                                <span class="tag">Azure DevOps</span>
                             </div>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="job-title">Software Developer</h3>
-                            <h4 class="company">Konsolidator</h4>
-                            <span class="duration">August 2020 - November 2021 (1 year 4 months)</span>
-                            <p class="job-description">
+
+                    <div class="experience-item">
+                        <div class="exp-timeline">
+                            <div class="exp-dot"></div>
+                            <div class="exp-line"></div>
+                        </div>
+                        <div class="exp-content">
+                            <div class="exp-header">
+                                <h3 class="exp-title">Software Developer</h3>
+                                <div class="exp-company">Konsolidator</div>
+                                <div class="exp-period">August 2020 - November 2021</div>
+                            </div>
+                            <p class="exp-description">
                                 Development and maintenance of Konsolidator's platform for financial consolidation. 
                                 A product used by big international groups with high focus on security and process.
                             </p>
-                            <div class="job-technologies">
-                                <span class="tech-tag">C#</span>
-                                <span class="tech-tag">MVC</span>
-                                <span class="tech-tag">.NET Core</span>
-                                <span class="tech-tag">.NET 5</span>
-                                <span class="tech-tag">REST API</span>
-                                <span class="tech-tag">OData</span>
-                                <span class="tech-tag">AutoFac</span>
-                                <span class="tech-tag">Angular</span>
+                            <div class="exp-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">MVC</span>
+                                <span class="tag">.NET Core</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">REST API</span>
+                                <span class="tag">OData</span>
                             </div>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="job-title">Software Developer</h3>
-                            <h4 class="company">Exformatics A/S</h4>
-                            <span class="duration">July 2019 - August 2020 (1 year 2 months)</span>
-                            <p class="job-description">
+
+                    <div class="experience-item">
+                        <div class="exp-timeline">
+                            <div class="exp-dot"></div>
+                            <div class="exp-line"></div>
+                        </div>
+                        <div class="exp-content">
+                            <div class="exp-header">
+                                <h3 class="exp-title">Software Developer</h3>
+                                <div class="exp-company">Exformatics A/S</div>
+                                <div class="exp-period">July 2019 - August 2020</div>
+                            </div>
+                            <p class="exp-description">
                                 Setup, development and maintenance of ECM applications for various Danish government agencies 
                                 including Udlændinge og integrations-ministeriet and Fagbevægelsens hovedorganisation.
                             </p>
-                            <div class="job-technologies">
-                                <span class="tech-tag">VB.NET</span>
-                                <span class="tech-tag">C#</span>
-                                <span class="tech-tag">XML</span>
-                                <span class="tech-tag">XSLT</span>
-                                <span class="tech-tag">SharePoint</span>
-                                <span class="tech-tag">MSSQL</span>
-                                <span class="tech-tag">SCRUM</span>
-                                <span class="tech-tag">TFS</span>
+                            <div class="exp-tags">
+                                <span class="tag">VB.NET</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">SharePoint</span>
+                                <span class="tag">XSLT</span>
+                                <span class="tag">SCRUM</span>
+                                <span class="tag">TFS</span>
                             </div>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="job-title">Software Developer</h3>
-                            <h4 class="company">Arcanic A/S</h4>
-                            <span class="duration">November 2012 - April 2019 (6 years 6 months)</span>
-                            <p class="job-description">
+
+                    <div class="experience-item">
+                        <div class="exp-timeline">
+                            <div class="exp-dot"></div>
+                        </div>
+                        <div class="exp-content">
+                            <div class="exp-header">
+                                <h3 class="exp-title">Software Developer</h3>
+                                <div class="exp-company">Arcanic A/S</div>
+                                <div class="exp-period">November 2012 - April 2019</div>
+                            </div>
+                            <p class="exp-description">
                                 Development and maintenance of LMS solutions (Learning Management System) for the educational sector. 
                                 Clients included DTU, RUC and Metropol. Focus on web services, scripts, bug fixing, and release management.
                             </p>
-                            <div class="job-technologies">
-                                <span class="tech-tag">C#</span>
-                                <span class="tech-tag">ASP.NET</span>
-                                <span class="tech-tag">MVC</span>
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Knockout.js</span>
-                                <span class="tech-tag">Entity Framework</span>
-                                <span class="tech-tag">Unit Testing</span>
-                                <span class="tech-tag">TeamCity</span>
+                            <div class="exp-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">ASP.NET</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Entity Framework</span>
+                                <span class="tag">Unit Testing</span>
+                                <span class="tag">TeamCity</span>
                             </div>
                         </div>
                     </div>
@@ -226,105 +256,77 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Skills & Technologies</h2>
-                    <div class="section-line"></div>
+                    <p class="section-subtitle">Tools and technologies I work with</p>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3 class="category-title">Frontend</h3>
-                        <div class="skills-list">
+                        <h3 class="skill-category-title">Languages & Frameworks</h3>
+                        <div class="skill-items">
                             <div class="skill-item">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML5</span>
+                                <span class="skill-name">C#</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="95"></div>
+                                </div>
                             </div>
                             <div class="skill-item">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS3/LESS</span>
+                                <span class="skill-name">.NET Core / .NET 8</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
                             </div>
                             <div class="skill-item">
-                                <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
+                                <span class="skill-name">React</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
                             </div>
                             <div class="skill-item">
-                                <i class="fab fa-react"></i>
-                                <span>React</span>
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="80"></div>
+                                </div>
                             </div>
                             <div class="skill-item">
-                                <i class="fab fa-angular"></i>
-                                <span>Angular</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-code"></i>
-                                <span>TypeScript</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-bootstrap"></i>
-                                <span>Bootstrap</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="category-title">Backend & .NET</h3>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <i class="fas fa-code"></i>
-                                <span>C#</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-code"></i>
-                                <span>.NET Core/.NET 8</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-code"></i>
-                                <span>ASP.NET MVC</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-exchange-alt"></i>
-                                <span>REST API</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-database"></i>
-                                <span>Entity Framework</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-database"></i>
-                                <span>MSSQL</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-code"></i>
-                                <span>Umbraco CMS</span>
+                                <span class="skill-name">Angular</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="75"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="skill-category">
-                        <h3 class="category-title">Tools & DevOps</h3>
-                        <div class="skills-list">
+                        <h3 class="skill-category-title">Databases & Tools</h3>
+                        <div class="skill-items">
                             <div class="skill-item">
-                                <i class="fab fa-git-alt"></i>
-                                <span>Git</span>
+                                <span class="skill-name">MSSQL</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
                             </div>
                             <div class="skill-item">
-                                <i class="fab fa-microsoft"></i>
-                                <span>Azure DevOps</span>
+                                <span class="skill-name">Entity Framework</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-code"></i>
-                                <span>Visual Studio</span>
+                                <span class="skill-name">Azure DevOps</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="80"></div>
+                                </div>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-tasks"></i>
-                                <span>SCRUM/Agile</span>
+                                <span class="skill-name">Git</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-vial"></i>
-                                <span>Unit Testing</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-microsoft"></i>
-                                <span>SharePoint</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-users"></i>
-                                <span>Team Leadership</span>
+                                <span class="skill-name">Umbraco CMS</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="75"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -336,85 +338,69 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Featured Projects</h2>
-                    <div class="section-line"></div>
+                    <p class="section-subtitle">Some of my notable work</p>
                 </div>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/1a1a1a/ffffff?text=Project+1" alt="Project 1">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="#" class="project-link" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
+                        <div class="project-header">
+                            <h3 class="project-title">EDC Customer Platform</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">E-commerce Platform</h3>
-                            <p class="project-description">
-                                A full-stack e-commerce solution with modern design and seamless user experience.
-                            </p>
-                            <div class="project-technologies">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                            </div>
+                        <p class="project-description">
+                            A comprehensive customer platform built with Umbraco CMS, React frontend, and .NET 8 backend. 
+                            Serves thousands of users with high availability requirements.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Umbraco</span>
+                            <span class="tag">React</span>
+                            <span class="tag">.NET 8</span>
+                            <span class="tag">Azure</span>
                         </div>
                     </div>
+
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/1a1a1a/ffffff?text=Project+2" alt="Project 2">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="#" class="project-link" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
+                        <div class="project-header">
+                            <h3 class="project-title">Financial Consolidation System</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Task Management App</h3>
-                            <p class="project-description">
-                                A collaborative task management application with real-time updates and team features.
-                            </p>
-                            <div class="project-technologies">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">Socket.io</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                            </div>
+                        <p class="project-description">
+                            Enterprise-grade financial consolidation platform used by international corporations. 
+                            Built with high security standards and complex business logic.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Angular</span>
+                            <span class="tag">OData</span>
+                            <span class="tag">MSSQL</span>
                         </div>
                     </div>
+
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/1a1a1a/ffffff?text=Project+3" alt="Project 3">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="#" class="project-link" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
+                        <div class="project-header">
+                            <h3 class="project-title">Educational LMS Platform</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Weather Dashboard</h3>
-                            <p class="project-description">
-                                A responsive weather dashboard with location-based forecasts and interactive charts.
-                            </p>
-                            <div class="project-technologies">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Chart.js</span>
-                                <span class="tech-tag">APIs</span>
-                            </div>
+                        <p class="project-description">
+                            Learning Management System serving major Danish universities including DTU and RUC. 
+                            Handled course management, assignments, and student progress tracking.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">ASP.NET MVC</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Entity Framework</span>
+                            <span class="tag">Bootstrap</span>
                         </div>
                     </div>
                 </div>
@@ -424,46 +410,69 @@
         <section id="contact" class="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <div class="section-line"></div>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Always interested in new opportunities and collaborations</p>
                 </div>
-                <div class="contact-content">
+                <div class="contact-grid">
                     <div class="contact-info">
-                        <h3>Let's Work Together</h3>
-                        <p>
-                            I'm always interested in hearing about new opportunities and exciting projects. 
-                            Whether you have a question or just want to say hi, feel free to reach out!
-                        </p>
-                        <div class="contact-methods">
-                            <div class="contact-method">
+                        <div class="contact-item">
+                            <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
-                                <span>linkedin@sandvaer.dk</span>
                             </div>
-                            <div class="contact-method">
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:linkedin@sandvaer.dk">linkedin@sandvaer.dk</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
                                 <i class="fab fa-linkedin-in"></i>
-                                <span>LinkedIn Profile</span>
                             </div>
-                            <div class="contact-method">
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/thomassandvær-jørgensen-605783180" target="_blank">Connect with me</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
                                 <span>Copenhagen, Denmark</span>
                             </div>
                         </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Status</h4>
+                                <span class="status-available">Open to opportunities</span>
+                            </div>
+                        </div>
                     </div>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required>
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -472,13 +481,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Thomas Sandvær Jørgensen. All rights reserved.</p>
+                <div class="footer-text">
+                    <p>&copy; 2024 Thomas Sandvær Jørgensen. All rights reserved.</p>
+                </div>
                 <div class="footer-social">
                     <a href="https://www.linkedin.com/in/thomassandvær-jørgensen-605783180" target="_blank" class="social-link">
                         <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:linkedin@sandvaer.dk" class="social-link">
                         <i class="fas fa-envelope"></i>
