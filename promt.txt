@@ -1,0 +1,5 @@
+Create a personal portofolio responsive webpage using html, css and javascript.
+The design should be tech smart fancy like the one here "https://nilsholmager.dk"
+My CV is in the file Profile.pdf in this directory.
+My CV with photo can also be found here "https://www.linkedin.com/in/thomas-sandvaer-joergensen"
+

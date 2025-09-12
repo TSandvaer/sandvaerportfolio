@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:nilsholmager.dk)",
+      "WebFetch(domain:www.linkedin.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
