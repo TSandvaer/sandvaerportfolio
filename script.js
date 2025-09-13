@@ -173,11 +173,12 @@ function initAnimations() {
 
 // Skill bars animation
 function initSkillBars() {
-    window.skillBarsAnimated = false;
+    // No global flag needed - each category animates independently
 }
 
 function animateSkillBars(skillCategory) {
-    if (window.skillBarsAnimated) return;
+    // Check if this specific category has already been animated
+    if (skillCategory.classList.contains('skills-animated')) return;
     
     const skillBars = skillCategory.querySelectorAll('.skill-bar');
     
@@ -189,7 +190,8 @@ function animateSkillBars(skillCategory) {
         }, index * 200);
     });
     
-    window.skillBarsAnimated = true;
+    // Mark this category as animated
+    skillCategory.classList.add('skills-animated');
 }
 
 // Counter animation
