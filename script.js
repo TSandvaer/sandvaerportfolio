@@ -41,11 +41,18 @@ function initNavigation() {
             }
         } else {
             sections.forEach(section => {
-                const sectionTop = section.offsetTop - 150; // Increased offset for better detection
+                const sectionId = section.getAttribute('id');
+                // Use different offsets for different sections
+                let offset = 100; // Default offset
+                if (sectionId === 'projects' || sectionId === 'contact') {
+                    offset = 200; // Larger offset for bottom sections
+                }
+
+                const sectionTop = section.offsetTop - offset;
                 const sectionBottom = sectionTop + section.offsetHeight;
 
                 if (scrollY >= sectionTop && scrollY < sectionBottom) {
-                    current = section.getAttribute('id');
+                    current = sectionId;
                 }
             });
         }
