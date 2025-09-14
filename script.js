@@ -40,21 +40,20 @@ function initNavigation() {
                 current = lastSection.getAttribute('id');
             }
         } else {
-            sections.forEach(section => {
-                const sectionId = section.getAttribute('id');
-                // Use different offsets for different sections
-                let offset = 100; // Default offset
-                if (sectionId === 'projects' || sectionId === 'contact') {
-                    offset = 200; // Larger offset for bottom sections
-                }
+            // Find the section that should be active based on scroll position
+            for (let i = sections.length - 1; i >= 0; i--) {
+                const section = sections[i];
+                const sectionTop = section.offsetTop - 150;
+                const sectionBottom = section.offsetTop + section.offsetHeight;
+                const viewportBottom = scrollY + windowHeight;
 
-                const sectionTop = section.offsetTop - offset;
-                const sectionBottom = sectionTop + section.offsetHeight;
-
-                if (scrollY >= sectionTop && scrollY < sectionBottom) {
-                    current = sectionId;
+                // Check if we're in this section or if this section is significantly in view
+                if (scrollY >= sectionTop ||
+                    (viewportBottom > section.offsetTop + 200 && scrollY < sectionBottom)) {
+                    current = section.getAttribute('id');
+                    break; // Stop at the first (topmost) section that matches
                 }
-            });
+            }
         }
 
         navLinks.forEach(link => {
@@ -82,7 +81,7 @@ function initNavigation() {
                 const targetSection = document.getElementById(targetId);
 
                 if (targetSection) {
-                    const offsetTop = targetSection.offsetTop - 64; // Account for navbar height
+                    const offsetTop = targetSection.offsetTop - 150 + 50; // Scroll 50px past the threshold to ensure marking
                     window.scrollTo({
                         top: offsetTop,
                         behavior: 'smooth'

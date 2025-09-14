@@ -147,6 +147,8 @@ body::after {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--container-padding);
+    position: relative;
+    z-index: 1;
 }
 
 /* Typography */
@@ -309,7 +311,7 @@ a:hover {
         radial-gradient(circle at 85% 15%, rgba(255, 0, 128, 0.15) 4px, transparent 4px);
     background-size: 80px 80px, 80px 80px, 240px 240px, 300px 300px, 350px 350px;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
 }
 
 .hero-container {
@@ -317,8 +319,6 @@ a:hover {
     margin: 0 auto;
     padding: 0 var(--container-padding);
     width: 100%;
-    position: relative;
-    z-index: 1;
 }
 
 .hero-content {
@@ -721,6 +721,7 @@ a:hover {
 section {
     padding: var(--section-spacing) 0;
     position: relative;
+    z-index: 1;
 }
 
 .section-header {
@@ -1167,7 +1168,7 @@ section {
         radial-gradient(circle at 80% 80%, rgba(0, 212, 255, 0.12) 3px, transparent 3px);
     background-size: 120px 120px, 160px 160px, 400px 400px, 400px 400px;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
 }
 
 .projects-grid {
