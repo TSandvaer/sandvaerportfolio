@@ -30,16 +30,26 @@ function initNavigation() {
     function updateActiveNav() {
         let current = 'home';
         const scrollY = window.scrollY;
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            const sectionBottom = sectionTop + section.offsetHeight;
-            
-            if (scrollY >= sectionTop && scrollY < sectionBottom) {
-                current = section.getAttribute('id');
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+
+        // If we're near the bottom of the page, activate the last section
+        if (scrollY + windowHeight >= documentHeight - 50) {
+            const lastSection = sections[sections.length - 1];
+            if (lastSection) {
+                current = lastSection.getAttribute('id');
             }
-        });
-        
+        } else {
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150; // Increased offset for better detection
+                const sectionBottom = sectionTop + section.offsetHeight;
+
+                if (scrollY >= sectionTop && scrollY < sectionBottom) {
+                    current = section.getAttribute('id');
+                }
+            });
+        }
+
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === '#' + current) {
@@ -49,6 +59,9 @@ function initNavigation() {
     }
     
     window.addEventListener('scroll', throttle(updateActiveNav, 100));
+
+    // Set initial active state on page load
+    updateActiveNav();
     
     // Smooth scrolling for navigation links
     navLinks.forEach(link => {
